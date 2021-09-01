@@ -40,6 +40,9 @@ body {
   padding: 10px;
   padding-top: 22vh;
 }
+.header .header__item .header__item__list .header__item__list__item:last-child {
+  border-right: 1px solid #444444;
+}
 
 .main {
   box-shadow: 1px 1px 2px gray;

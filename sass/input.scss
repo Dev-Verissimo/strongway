@@ -58,6 +58,9 @@ body{
                 padding: 10px;
                 padding-top: 22vh;
             }
+            .header__item__list__item:last-child{
+                border-right: 1px solid #444444;
+            }
         }
     }
     
