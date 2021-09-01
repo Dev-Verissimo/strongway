@@ -1,15 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,700;0,900;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
-  font-family: "Roboto";
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
   background-color: #ddd;
+  padding-bottom: 20px;
 }
 
 .header {
@@ -35,6 +36,7 @@ body {
 .header .header__item .header__item__list .header__item__list__item {
   padding-bottom: 20px;
   border-left: 1px solid #444444;
+  cursor: pointer;
   padding: 10px;
   padding-top: 22vh;
 }
@@ -85,6 +87,7 @@ body {
   font-weight: 400;
 }
 .section .section__button {
+  cursor: pointer;
   background-color: #b20000;
   color: white;
   border: none;
