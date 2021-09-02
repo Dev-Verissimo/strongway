@@ -116,8 +116,10 @@ body {
 .main .main__aside .main__aside__list .main__aside_list__item:hover {
   transform: scale(1.1);
 }
-.main .main__aside .main__item__list--two {
+.main .main__aside .main__item__list {
   display: none;
+}
+.main .main__aside .main__item__list--two {
   padding-top: 20px;
   display: flex;
   flex-flow: column;
