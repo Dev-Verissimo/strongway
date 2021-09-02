@@ -9,6 +9,7 @@ hamburger.addEventListener('click' , () =>{
     if (open == false) {
         open = true
         aside.classList.add('menu')
+        ulTwo.style.display = "flex"
     }else{
         open = false
         aside.classList.remove('menu')

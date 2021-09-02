@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,700&display=swap');
 
 $colorGray: #444;
-$fontRaleway: 'Raleway', sans-serif;
+$fontRaleway: 'Raleway',
+sans-serif;
 
-*{
+* {
     box-sizing: border-box;
 
     margin: 0;
@@ -17,8 +18,8 @@ $fontRaleway: 'Raleway', sans-serif;
 
 }
 
-body{
-    background-color: #ddd ;
+body {
+    background-color: #ddd;
     padding-bottom: 20px;
 
     @media (max-width: 900px) {
@@ -26,7 +27,7 @@ body{
     }
 }
 
-.header{
+.header {
     background-color: #000;
     color: white;
 
@@ -34,17 +35,17 @@ body{
 
 
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: flex-end;
 
     gap: 60px;
 
-    #hamburger{
+    #hamburger {
         width: 16px;
         height: 16px;
         align-self: flex-end;
         margin-bottom: 30px;
-        
+
         display: none;
 
         @media (max-width: 900px) {
@@ -52,20 +53,21 @@ body{
         }
     }
 
-    .header__item__img{
+    .header__item__img {
         width: 200px;
         padding-bottom: 20px;
 
     }
 
-    .header__item{
+    .header__item {
         height: 100%;
         display: flex;
-        img{
+
+        img {
             width: 16px;
         }
 
-        .header__item__list{
+        .header__item__list {
             height: 100%;
 
             display: flex;
@@ -73,35 +75,37 @@ body{
             @media (max-width: 900px) {
                 display: none;
             }
-            
-            
 
 
-            .header__item__list__item{
+
+
+            .header__item__list__item {
                 border-left: 1px solid $colorGray;
 
                 cursor: pointer;
-                
+
                 padding: 30px;
                 padding-top: 24vh;
 
-                &:hover{
+                &:hover {
                     color: #b20000;
                 }
 
             }
-            .header__item__list__item:last-child{
+
+            .header__item__list__item:last-child {
                 border-right: 1px solid $colorGray;
             }
         }
     }
+
     @media (max-width: 900px) {
         gap: 5px;
     }
-    
+
 }
 
-.main{
+.main {
     box-shadow: 1px 1px 2px gray;
     background-color: white;
     margin: 0 auto;
@@ -118,45 +122,63 @@ body{
 
     border-top: 20px solid $colorGray;
 
-    .main__aside{
-     
+    .main__aside {
+
         width: 50%;
         height: 100%;
         min-width: 200px;
         font-weight: 400;
 
-        .main__aside__tittle{
+        .main__aside__tittle {
             padding: 5px;
             font-weight: 900;
             padding-bottom: 10px;
             border-bottom: 1px solid $colorGray;
             font-family: $fontRaleway;
         }
-        .main__aside__list{
+
+        .main__aside__list {
             display: flex;
             flex-flow: column;
 
 
-            .main__aside_list__item{
-                
+            .main__aside_list__item {
+
                 height: 40px;
                 padding: 10px;
                 box-shadow: 1px 1px 2px gray;
-                &:hover{
+
+                &:hover {
                     transform: scale(1.1);
                 }
             }
 
         }
-        .main__item__list--two{
+
+        .main__item__list--two {
             display: none;
-            
+            padding-top: 20px;
+
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            gap: 10px;
+
+            .main__item__list__item {
+                &:hover {
+                    color: #b20000;
+                }
+            }
+
+
         }
+
         @media (max-width: 900px) {
             display: none;
         }
     }
-    .menu{
+
+    .menu {
         display: block;
         background-color: #000;
         color: white;
@@ -167,12 +189,13 @@ body{
 
         max-width: 300px;
     }
+
     @media (max-width: 900px) {
         padding: 30px 50px;
     }
 }
 
-.section{
+.section {
     display: flex;
     flex-flow: column;
     align-items: baseline;
@@ -180,13 +203,13 @@ body{
 
     padding-bottom: 20px;
 
-    .section__tittle{
+    .section__tittle {
         font-weight: 600;
         font-family: $fontRaleway;
 
     }
 
-    .section__button{
+    .section__button {
         cursor: pointer;
         background-color: #b20000;
         color: white;
@@ -195,13 +218,13 @@ body{
         padding: 10px;
         transition: 2s all;
 
-        &:hover{
+        &:hover {
             transform: scale(1.1);
         }
     }
 }
 
-.footer{
+.footer {
     text-align: center;
 
     @media (max-width: 900px) {

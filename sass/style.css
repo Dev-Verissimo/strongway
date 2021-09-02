@@ -118,6 +118,14 @@ body {
 }
 .main .main__aside .main__item__list--two {
   display: none;
+  padding-top: 20px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+.main .main__aside .main__item__list--two .main__item__list__item:hover {
+  color: #b20000;
 }
 @media (max-width: 900px) {
   .main .main__aside {
