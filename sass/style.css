@@ -13,6 +13,11 @@ body {
   background-color: #ddd;
   padding-bottom: 20px;
 }
+@media (max-width: 900px) {
+  body {
+    overflow-x: hidden;
+  }
+}
 
 .header {
   background-color: #000;
@@ -23,26 +28,54 @@ body {
   align-items: flex-end;
   gap: 60px;
 }
+.header #hamburger {
+  width: 16px;
+  height: 16px;
+  align-self: flex-end;
+  margin-bottom: 30px;
+  display: none;
+}
+@media (max-width: 900px) {
+  .header #hamburger {
+    display: block;
+  }
+}
 .header .header__item__img {
   width: 200px;
   padding-bottom: 20px;
 }
 .header .header__item {
   height: 100%;
+  display: flex;
+}
+.header .header__item img {
+  width: 16px;
 }
 .header .header__item .header__item__list {
   height: 100%;
   display: flex;
 }
+@media (max-width: 900px) {
+  .header .header__item .header__item__list {
+    display: none;
+  }
+}
 .header .header__item .header__item__list .header__item__list__item {
-  padding-bottom: 20px;
   border-left: 1px solid #444;
   cursor: pointer;
-  padding: 10px;
-  padding-top: 22vh;
+  padding: 30px;
+  padding-top: 24vh;
+}
+.header .header__item .header__item__list .header__item__list__item:hover {
+  color: #b20000;
 }
 .header .header__item .header__item__list .header__item__list__item:last-child {
   border-right: 1px solid #444;
+}
+@media (max-width: 900px) {
+  .header {
+    gap: 5px;
+  }
 }
 
 .main {
@@ -50,11 +83,12 @@ body {
   background-color: white;
   margin: 0 auto;
   width: 80%;
+  max-width: 850px;
   padding-top: 20px;
   padding-left: 10px;
   padding-right: 10px;
-  display: flex;
   gap: 20px;
+  display: flex;
   border-top: 20px solid #444;
 }
 .main .main__aside {
@@ -79,6 +113,31 @@ body {
   padding: 10px;
   box-shadow: 1px 1px 2px gray;
 }
+.main .main__aside .main__aside__list .main__aside_list__item:hover {
+  transform: scale(1.1);
+}
+.main .main__aside .main__item__list--two {
+  display: none;
+}
+@media (max-width: 900px) {
+  .main .main__aside {
+    display: none;
+  }
+}
+.main .menu {
+  display: block;
+  background-color: #000;
+  color: white;
+  position: absolute;
+  left: 0;
+  top: 30vh;
+  max-width: 300px;
+}
+@media (max-width: 900px) {
+  .main {
+    padding: 30px 50px;
+  }
+}
 
 .section {
   display: flex;
@@ -98,10 +157,19 @@ body {
   border: none;
   border-radius: 10px;
   padding: 10px;
+  transition: 2s all;
+}
+.section .section__button:hover {
+  transform: scale(1.1);
 }
 
 .footer {
   text-align: center;
+}
+@media (max-width: 900px) {
+  .footer {
+    font-family: 16px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
